@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;700&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Heebo:wght@400;700&family=Inconsolata:wght@700&family=Lora&family=Montserrat:wght@300;400;700&family=Open+Sans&family=PT+Serif:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+.wrapper {
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    left: -32px;
+    top: 349px;
+    text-align: center;
+}
+
+.icon-loading {
+    top: 50%;
+    font-size: 25px;
+    color: #fff;
+    transform: translateY(-50%);
+    animation: spinner .7s linear infinite;
+}
+
+.text-loading {
+    margin-top: 7px;
+    font-size: 16px;
+    color: #fff;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    margin-top: 50px;
+    color: #fff;
+}
+
+.logout {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: color .2s ease;
+
+    &:hover {
+        color: #cc9a9a;
+    }
+}
+
+.logo-logout {
+    font-size: 20px;
+}
+
+.text-logout {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.header {
+    text-align: center;
+    font-size: 43px;
+    font-weight: 500;
+    font-family: "Edu NSW ACT Foundation";
+}
+
+.todo-list {
+    width: 600px;
+    padding: 0 20px;
+    margin: 25px 0;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.todo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-add {
+    flex: 1;
+    padding: 15px 10px;
+    font-size: 20px;
+    line-height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-todo-header {
+    padding: 0 10px;
+}
+
+.btn-add,
+.btn-delete-all {
+    margin-left: 11px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.btn-add {
+    display: none;
+}
+
+.todo-item {
+    width: 100%;
+}
+
+.todo-item-edit {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px;
+    border-top: 1px solid #cc9a9a;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-edit {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid #cc9a9a;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.btn-done {
+    margin-left: 5px;
+    padding: 9px 10px;
+    background-color: #cc9a9a;
+    border: none;
+    color: #fff;
+    font-size: 11px;
+    height: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .2s ease-out ,color .2s ease-out;
+
+    &:active {
+        opacity: .8;
+    }
+}
+
+.todo-item-child {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #cc9a9a;
+}
+
+.content-main {
+    display: flex;
+    align-items: center;
+}
+
+.btn-check {
+    width: 27px;
+    height: 27px;
+    margin-right: 7px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon-check {
+    display: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.icon-check.active {
+    display: initial;
+}
+
+.item.active {
+    text-decoration: line-through;
+    opacity: .7;
+}
+
+.btn-edit,
+.btn-delete {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color .1s ease;
+
+    &:hover {
+        color: #cc9a9a;
+    }
+}
+
+
+
+
